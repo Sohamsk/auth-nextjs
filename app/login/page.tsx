@@ -2,7 +2,7 @@ import Link from "next/link";
 
 export default function Page() {
     return (
-        <main className="w-full h-[57.5rem] flex items-center justify-center">
+        <main className="w-full h-[95vh] flex items-center justify-center">
             <section className=" lg:w-1/4 w-4/5 h-1/3 flex flex-col justify-around items-center bg-slate-300 rounded-xl">
                 <p className="relative text-center text-3xl w-2/3">Login</p>
                 <input className="bg-transparent border-b-2 w-2/3 border-slate-600 hover:border-blue-300 h-10 text-black placeholder-gray-700" type="text" placeholder="email" />
