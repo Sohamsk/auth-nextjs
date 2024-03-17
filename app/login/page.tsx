@@ -16,7 +16,7 @@ export default function Page() {
         try {
             const resp = await axios.post("/api/login", user)
             if (resp.status === 200)
-                router.push('/')
+                router.push('/dashboard')
         } catch (error) {
             console.log('login failed');
         }
