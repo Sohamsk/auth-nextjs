@@ -2,10 +2,10 @@ import { connect } from '@/db/connection'
 import User from '@/models/userModel'
 import { NextRequest, NextResponse } from 'next/server'
 import bcrypt from 'bcryptjs'
-connect()
 
 export async function POST(req: NextRequest) {
     try {
+        await connect()
         const { FirstName, LastName, email, password } = await req.json()
 
         // checking if user already exists
